@@ -1,0 +1,24 @@
+.sold-out-toggle{
+    position: absolute;
+    top: -30px;
+    right: 38px;
+    z-index: 100000;
+  }
+  .merch-grid li.hidden{
+    display: none;
+  }
+  #grid-tabs li[data-tab=following] + li{
+      visibility: hidden;
+  }
+  #grid-tabs li[data-tab=following].active + li{
+      visibility: visible;
+  }
+  #grid-tabs li[data-tab=following] + li + li{
+      visibility: hidden;
+  }
+  #grid-tabs li[data-tab=following].active + li + li{
+      visibility: visible;
+  }
+  .followeer-grid .followeer.initial-batch:nth-child(1n+41) {
+      display: inline-block !important;
+  }
