@@ -1,19 +1,4 @@
 const merchGrid = document.querySelector('.merch-grid')
-try {
-    const albumData = TralbumData
-    if (albumData) {
-        const trackData = albumData.trackinfo
-        if (trackData) {
-            trackData.forEach(e => {
-                console.log(`${e.title} download: ${JSON.stringify(e.file)}`)
-            })
-        }
-    }
-} catch (error) {
-    console.log('bandcamp data failed to load')
-}
-
-
 // add sold out toggle
 if (merchGrid) {
     let soldOutItems = merchGrid.querySelectorAll('li > .price.sold-out')
